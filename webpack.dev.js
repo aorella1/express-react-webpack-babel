@@ -24,5 +24,8 @@ module.exports = merge(common, {
       }, 
     ]
   },
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    port: 3001
+  }
 });
