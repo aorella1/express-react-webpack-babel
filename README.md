@@ -1,4 +1,4 @@
-# react-webpack-babel boilerplate
+# express-react-webpack-babel boilerplate
 
 Custom boilerplate code for quickly setting up a react app. Similar features to create-react-app.
 
