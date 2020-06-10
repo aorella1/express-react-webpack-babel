@@ -15,4 +15,5 @@ npm run build
 
 ## Missing Boilerplate Features: 
 Favicon Setup - can be setup with HtmlWebpackPlugin
+
 Meta Tag Management - can be added with react-helmet client side
