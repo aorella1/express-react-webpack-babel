@@ -13,17 +13,20 @@ module.exports = {
         loader: [
           {
             loader: 'babel-loader',
-            query: {
+            options: {
               //@babel/preset-env: Compile ES6+ to ES5 js
               //@babel/preset-react: Convert JSX to js
-              presets: ["@babel/preset-env", "@babel/preset-react"]
+              presets: [
+                "@babel/preset-env",
+                "@babel/preset-react"],
+              plugins: ['@babel/plugin-syntax-dynamic-import']
             }
           }
         ]
       },
       {
         test: /\.html$/,
-        //requre files in html such as .svg
+        //requre files in html such as .svg, .png, etc.
         use: ['html-loader']
       },
       {
