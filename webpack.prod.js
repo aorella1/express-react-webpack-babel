@@ -11,7 +11,9 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'js/[name].[contentHash].bundle.js'
+    filename: 'js/[name].[contentHash].bundle.js',
+    //Non-entry dynamic chunk file
+    chunkFilename: 'js/[name].[contentHash].bundle.js'
   },
   optimization: {
     splitChunks: {
