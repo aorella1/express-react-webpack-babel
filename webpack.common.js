@@ -14,12 +14,15 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              //@babel/preset-env: Compile ES6+ to ES5 js
-              //@babel/preset-react: Convert JSX to js
+
               presets: [
+                //@babel/preset-env: Compile ES6+ to ES5 js
+                //@babel/preset-react: Convert JSX to js
                 "@babel/preset-env",
                 "@babel/preset-react"],
               plugins: [
+                //@babel/plugin-syntax-dynamic-import: async/await sntax with dynamic import and compatibility w/ @loadable/compnents.
+                //@loadable/babel-plugin: automatic dynamic chunk naming and SSR dynamic import compatibility
                 '@babel/plugin-syntax-dynamic-import',
                 '@loadable/babel-plugin'
               ]
