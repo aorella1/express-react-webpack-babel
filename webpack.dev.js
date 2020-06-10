@@ -8,9 +8,7 @@ module.exports = merge(common, {
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].bundle.js'
-  },  // Show original Javascript in debug instead of minified code
-  devtool: 'cheap-module-eval-source-map',
-  //Hot reload dev server
+  },
   plugins: [new HtmlWebpackPlugin({
     template: "./src/template.html"
   })],
@@ -18,13 +16,18 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        //style-loader: Inject CSS into DOM via <style> tag
-        //css-loader: load CSS assets
-        use: ['style-loader', 'css-loader']
-      }, 
+        use: [
+          //style-loader: Inject CSS into DOM via <style> tag
+          //css-loader: load CSS assets
+          'style-loader',
+          'css-loader'
+        ]
+      },
     ]
   },
+  // Show original Javascript in debug instead of minified code
   devtool: 'cheap-module-eval-source-map',
+  //hot reload server options
   devServer: {
     port: 3002
   }

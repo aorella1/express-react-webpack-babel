@@ -1,7 +1,7 @@
 {
   "name": "react-webpack-babel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom boilerplate code for quickly setting up a react app. Similar features to create-react-app.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,5 +36,13 @@
     "@loadable/component": "^5.12.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aorella1/express-react-webpack-babel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aorella1/express-react-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/aorella1/express-react-webpack-babel#readme"
 }
